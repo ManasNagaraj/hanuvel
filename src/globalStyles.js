@@ -12,7 +12,8 @@ const Styles = createGlobalStyle`
     body,
     html,
     a {
-        font-family: 'Baskervvile-regular';
+        font-family: 'Ubuntu',sans serif;
+        
     }
 
 
@@ -35,7 +36,7 @@ const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Baskervville-regular';
+        font-family: 'Ubuntu';
         color: #FAFAFA;
         font-size: 2.575rem;
         line-height: 3.0625rem;

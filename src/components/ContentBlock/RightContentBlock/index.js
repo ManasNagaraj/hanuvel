@@ -59,7 +59,7 @@ const RightBlock = ({
               src={icon}
               className='about-block-image'
               width='100%'
-              height='100%'
+              height='300vw'
             />
           </Slide>
         </Col>

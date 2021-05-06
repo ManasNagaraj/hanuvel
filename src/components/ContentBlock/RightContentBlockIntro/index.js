@@ -34,6 +34,13 @@ const RightBlockIntro = ({
               <S.Content style={{ fontSizeAdjust: t(contentSize) }}>
                 {t(content)}
               </S.Content>
+              <S.Content style={{ fontSizeAdjust: 11 }}>
+                Leverage our expertise across our core services to provide a
+                sophisticated approach to brand development. Merged with your
+                business strategy, this collaborative approach is critical in
+                developing engaging brands for every audience that get attention
+                and earn loyalty.
+              </S.Content>
               <S.ButtonWrapper>
                 {button &&
                   typeof button === 'object' &&
