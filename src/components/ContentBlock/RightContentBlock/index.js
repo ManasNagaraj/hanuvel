@@ -53,7 +53,7 @@ const RightBlock = ({
             </S.ContentWrapper>
           </Slide>
         </Col>
-        <Col lg={11} md={11} sm={12} xs={24}>
+        <Col lg={11} md={11} sm={12} xs={24} style={{ overflow: 'hidden' }}>
           <Slide right>
             <SvgIcon
               src={icon}

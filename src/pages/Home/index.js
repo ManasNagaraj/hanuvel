@@ -53,6 +53,7 @@ const Home = () => {
   
   Our consultants understand the theory that underpins all our work. Our methods deliberately challenge the systems dynamics approach.'
       />
+
       <ContentBlock
         type='right'
         title='Strategic Ability'
@@ -91,17 +92,31 @@ const Home = () => {
       />
       <ContentBlock
         type='right'
+        icon='b6.jpg'
+        title='Expertise in a specific market/industry'
+        content='Identifying problems and Solution to the problems
+        Supplementing staff
+        Initiating change and Improvement
+        Providing objectivity
+        Teaching and training employees
+        Reviving an organization
+        Creating a new business
+        Human resources
+        Business strategy
+        Operations
+        Compliance and regulations
+        Financial planning
+        Statutory Reporting depending on the industry'
+      />
+      <ContentBlock
+        type='right'
         title={ComplianceFramework.title}
         content={ComplianceFramework.text}
         icon='compliance.svg'
         id='product'
       />
 
-      <ContactFrom
-        title={ContactContent.title}
-        content={ContactContent.text}
-        id='contact'
-      />
+      <ContactFrom title={ContactContent.title} id='contact' />
     </Container>
   );
 };

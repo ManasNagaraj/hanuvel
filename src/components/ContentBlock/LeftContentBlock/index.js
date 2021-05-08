@@ -19,8 +19,8 @@ const LeftContentBlock = ({
   return (
     <S.LeftContentBlock>
       <Row type='flex' justify='space-between' align='middle' id={id}>
-        <Col lg={11} md={11} sm={12} xs={24}>
-          <Slide left>
+        <Col lg={11} md={11} sm={12} xs={24} style={{ overflow: 'hidden' }}>
+          <Slide>
             <SvgIcon
               src={icon}
               className='about-block-image'
