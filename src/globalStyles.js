@@ -3,16 +3,17 @@ import { createGlobalStyle } from 'styled-components';
 const Styles = createGlobalStyle`
 
 @font-face{
-    font-family:'Baskervville-regular';S
+    font-family:'Baskervville-regular';
     src:local('Baskervville-regular') local('Baskervville-regular');
     url:('./assets/Baskervville-Italic.ttf') format('ttf');
-
+    font-family:'Merriweather';
+    src:local('Merriweather');
 }
 
     body,
     html,
     a {
-        font-family: 'Ubuntu',sans serif;
+        font-family: 'Merriweather';
         
     }
 
@@ -36,7 +37,7 @@ const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Ubuntu';
+        font-family: 'Merriweather';
         color: #FAFAFA;
         font-size: 2.575rem;
         line-height: 3.0625rem;
