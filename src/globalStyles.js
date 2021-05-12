@@ -2,18 +2,25 @@ import { createGlobalStyle } from 'styled-components';
 
 const Styles = createGlobalStyle`
 
+// @font-face{
+//     font-family:'Baskervville-regular';
+//     src:local('Baskervville-regular') local('Baskervville-regular');
+//     url:('./assets/Baskervville-Italic.ttf') format('ttf');
+//     font-family:'Merriweather';
+//     src:url('./assets/Merriweather-regular.ttf');
+
+// }
 @font-face{
-    font-family:'Baskervville-regular';
-    src:local('Baskervville-regular') local('Baskervville-regular');
-    url:('./assets/Baskervville-Italic.ttf') format('ttf');
-    font-family:'Merriweather';
-    src:local('Merriweather');
+    font-family:'Poppins';
+    src: local('Poppins-SemiBold')
 }
 
     body,
     html,
     a {
-        font-family: 'Merriweather';
+        font-family:'Poppins', 'Segoe UI';
+
+        // font-family: 'Merriweather';
         
     }
 

@@ -33,7 +33,7 @@ const Footer = ({ t }) => {
       <Fade bottom>
         <S.Footer>
           <Container>
-            <Row type='flex' justify='space-between'>
+            {/* <Row type='flex' justify='space-between'>
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Language>{t('Contact')}</S.Language>
                 <S.Large>{t('Tell us everything')}</S.Large>
@@ -65,7 +65,7 @@ const Footer = ({ t }) => {
                   {t('Customer Support')}
                 </S.Large>
               </Col>
-            </Row>
+            </Row> */}
             <Row type='flex' justify='space-between'>
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Language>{t('ADDRESS')}</S.Language>
