@@ -45,7 +45,7 @@ function Hero() {
         <source src={Backdrop} type='video/mp4' />
       </video>
 
-      <Gradient />
+      {/* <Gradient /> */}
 
       <HeroTitle>
         <motion.div className='banner' variants={banner}>
@@ -58,7 +58,10 @@ function Hero() {
               marginTop: '50px',
             }}
           ></div>
-          <BannerRowBottom title={'Consultant'} />
+          <BannerRowBottom
+            style={{ height: '10vh !important' }}
+            title={'Consultant'}
+          />
         </motion.div>
       </HeroTitle>
     </HeroContainer>

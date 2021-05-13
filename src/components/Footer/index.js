@@ -82,30 +82,20 @@ const Footer = ({ t }) => {
                   {t('Blog')}
                 </S.Large>
               </Col>
-              <Col lg={6} md={6} sm={12} xs={24}></Col>
+              <Col lg={6} md={6} sm={12} xs={24}>
+                <S.NavLink to='/'>
+                  <S.LogoContainer></S.LogoContainer>
+                </S.NavLink>
+                <S.FooterContainer>
+                  <SocialLink href='' src='twitter.svg' />
+                  <SocialLink href='' src='linkedin.svg' />
+                  <SocialLink href='' src='instagram.svg' />
+                  <SocialLink href='' src='medium.svg' />
+                </S.FooterContainer>
+              </Col>
             </Row>
           </Container>
         </S.Footer>
-        <S.Extra>
-          <Container border='true'>
-            <Row
-              type='flex'
-              justify='space-between'
-              align='middle'
-              style={{ paddingTop: '3rem' }}
-            >
-              <S.NavLink to='/'>
-                <S.LogoContainer></S.LogoContainer>
-              </S.NavLink>
-              <S.FooterContainer>
-                <SocialLink href='' src='twitter.svg' />
-                <SocialLink href='' src='linkedin.svg' />
-                <SocialLink href='' src='instagram.svg' />
-                <SocialLink href='' src='medium.svg' />
-              </S.FooterContainer>
-            </Row>
-          </Container>
-        </S.Extra>
       </Fade>
     </Fragment>
   );

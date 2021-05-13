@@ -27,7 +27,7 @@ const MiddleBlock = ({ title, content, button, t }) => {
                 rely on HANUVEL’s global team to connect with powerful insight
                 across fields from our network and experts{' '}
               </S.Content>
-              {button ? (
+              {/* {button ? (
                 <Button
                   name='submit'
                   type='submit'
@@ -37,7 +37,7 @@ const MiddleBlock = ({ title, content, button, t }) => {
                 </Button>
               ) : (
                 ''
-              )}
+              )} */}
             </Col>
           </S.ContentWrapper>
         </Fade>

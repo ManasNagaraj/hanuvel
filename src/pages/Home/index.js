@@ -39,7 +39,7 @@ const Home = () => {
 
         <ContentBlock
           type='left'
-          icon='b2.jpg'
+          icon='organizational.jpg'
           title='Organizational Development'
           content='
   Adopt a structure and tempo that enables agility, innovation and creates resilience.
@@ -56,7 +56,7 @@ const Home = () => {
         <ContentBlock
           type='right'
           title='Strategic Ability'
-          icon='b3.jpg'
+          icon='businessDev.jpg'
           content='An authentic, real time response to complex situations.
 
         Traditional management techniques focus on planning and problem solving, often the tools we use are designed to create certainty and predictability. These approaches have limited utility in a world that is inherently uncertain and unpredictable – they are inauthentic.
@@ -80,7 +80,7 @@ const Home = () => {
         <ContentBlock
           type='left'
           title='Team Development'
-          icon='b4.jpg'
+          icon='team.jpg'
           content='Move form managing projects to empowering teams and provide advice.
 
       Adopt a mode of operation that explores and innovates, fails fast and learns quickly.
@@ -91,7 +91,7 @@ const Home = () => {
         />
         <ContentBlock
           type='right'
-          icon='b6.jpg'
+          icon='expert.jpg'
           title='Expertise in a specific market/industry'
           content='Identifying problems and Solution to the problems
         Supplementing staff
@@ -108,10 +108,10 @@ const Home = () => {
         Statutory Reporting depending on the industry'
         />
         <ContentBlock
-          type='right'
+          type='left'
           title={ComplianceFramework.title}
           content={ComplianceFramework.text}
-          icon='compliance.svg'
+          icon='comply1.jpg'
           id='whyus'
         />
 

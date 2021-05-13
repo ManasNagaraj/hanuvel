@@ -65,7 +65,7 @@ const RightBlock = ({
                 src={icon}
                 className='about-block-image'
                 width='100%'
-                height='300vw'
+                height='350vw'
               />
             </Slide>
           </motion.div>

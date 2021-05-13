@@ -17,7 +17,7 @@ $black: #24242a;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 30vh;
+    height: 14vh;
     @media (max-width: $layout-breakpoint-medium) {
       //   &:first-child {
       //     margin-top: 48px;
@@ -82,12 +82,12 @@ $black: #24242a;
       //      align-content: center;
       justify-content: space-around;
       @media (max-width: $layout-breakpoint-medium) {
-        width: 100%;
+        width: 50%;
       }
       @media (max-width: 1240px) {
       }
       @media (max-width: $layout-breakpoint-xsmall) {
-        width: 100%;
+        width: 50%;
         justify-content: space-around;
       }
       .row-message {
