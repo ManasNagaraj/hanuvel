@@ -50,7 +50,14 @@ function Hero() {
       <HeroTitle>
         <motion.div className='banner' variants={banner}>
           <BannerRowTop title={'Hanuvel'} />
-
+          <div
+            style={{
+              width: '100%',
+              height: '10px',
+              backgroundColor: '#ffc93c',
+              marginTop: '50px',
+            }}
+          ></div>
           <BannerRowBottom title={'Consultant'} />
         </motion.div>
       </HeroTitle>
@@ -78,22 +85,30 @@ const AnimatedLetters = ({ title, disabled }) => (
   </motion.span>
 );
 
+const AnimatedLettersR = ({ title, disabled }) => (
+  <motion.span
+    className='row-title'
+    variants={disabled ? null : banner}
+    initial='initial'
+    animate='animate'
+  >
+    {[...title].map((letter) => (
+      <motion.span
+        className='row-letter-rew'
+        variants={disabled ? null : letterAni}
+      >
+        {letter}
+      </motion.span>
+    ))}
+  </motion.span>
+);
+
 const BannerRowTop = ({ title }) => {
   return (
     <div className={'banner-row'}>
       <div className='row-col'>
         <AnimatedLetters title={title} />
       </div>
-      <motion.div
-        initial={{ opacity: 0, y: 80 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 1,
-          delay: 0.4,
-        }}
-        className='row-col'
-      ></motion.div>
     </div>
   );
 };
@@ -101,7 +116,7 @@ const BannerRowTop = ({ title }) => {
 const BannerRowBottom = ({ title }) => {
   return (
     <div className={'banner-row center'}>
-      <AnimatedLetters title={title} />
+      <AnimatedLettersR title={title} />
     </div>
   );
 };

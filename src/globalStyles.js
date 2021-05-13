@@ -44,7 +44,7 @@ const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Merriweather';
+        font-family: 'Poppins';
         color: #FAFAFA;
         font-size: 2.575rem;
         line-height: 3.0625rem;

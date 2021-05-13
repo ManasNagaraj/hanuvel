@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import * as S from './styles';
 
 const SvgIcon = lazy(() => import('../../common/SvgIcon'));
-const Button = lazy(() => import('../../common/ButtonHeader'));
+const Button = lazy(() => import('../../common/Button'));
 
 //TODO add responsive element for mobile justify content
 

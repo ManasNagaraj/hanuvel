@@ -15,7 +15,9 @@ $black: #24242a;
   .banner-row {
     // overflow: hidden;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    height: 30vh;
     @media (max-width: $layout-breakpoint-medium) {
       //   &:first-child {
       //     margin-top: 48px;
@@ -24,6 +26,7 @@ $black: #24242a;
     &.center {
       justify-content: center;
       text-align: center;
+
       .row-letter {
         left: 0;
       }
@@ -37,7 +40,7 @@ $black: #24242a;
       color: $white;
       font-weight: 500;
       position: relative;
-      letter-spacing: -0.8rem;
+      letter-spacing: 0;
       display: inline-block;
       white-space: nowrap;
       @media (max-width: $layout-breakpoint-xsmall) {
@@ -51,22 +54,41 @@ $black: #24242a;
         font-weight: 400;
       }
     }
+
+    .row-letter-rew {
+      font-size: 6rem;
+      color: $white;
+      font-weight: 500;
+      position: relative;
+      letter-spacing: 0rem;
+      display: inline-block;
+      white-space: nowrap;
+      @media (max-width: $layout-breakpoint-xsmall) {
+        font-size: 3rem;
+        letter-spacing: -0.1rem;
+        font-weight: 400;
+      }
+      @media (max-width: $layout-breakpoint-medium) {
+        font-size: 3rem;
+        letter-spacing: -0.1rem;
+        font-weight: 400;
+      }
+    }
+
     .row-col {
-      width: 50%;
+      width: 100%;
       display: flex;
-      align-content: center;
-      justify-content: center;
+
+      //      align-content: center;
+      justify-content: space-around;
       @media (max-width: $layout-breakpoint-medium) {
         width: 100%;
       }
       @media (max-width: 1240px) {
-        &:last-child {
-          display: none;
-        }
       }
       @media (max-width: $layout-breakpoint-xsmall) {
         width: 100%;
-        justify-content: flex-start;
+        justify-content: space-around;
       }
       .row-message {
         font-weight: 500;
