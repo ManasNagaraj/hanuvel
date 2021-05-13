@@ -33,7 +33,7 @@ $black: #24242a;
     }
     .row-title,
     .row-letter {
-      font-size: 14rem;
+      font-size: 13rem;
       color: $white;
       font-weight: 500;
       position: relative;
@@ -41,7 +41,14 @@ $black: #24242a;
       display: inline-block;
       white-space: nowrap;
       @media (max-width: $layout-breakpoint-xsmall) {
-        font-size: 13rem;
+        font-size: 5rem;
+        letter-spacing: -0.1rem;
+        font-weight: 400;
+      }
+      @media (max-width: $layout-breakpoint-medium) {
+        font-size: 5rem;
+        letter-spacing: -0.1rem;
+        font-weight: 400;
       }
     }
     .row-col {
@@ -50,7 +57,7 @@ $black: #24242a;
       align-content: center;
       justify-content: center;
       @media (max-width: $layout-breakpoint-medium) {
-        width: 70%;
+        width: 100%;
       }
       @media (max-width: 1240px) {
         &:last-child {

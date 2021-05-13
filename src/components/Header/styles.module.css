@@ -1,0 +1,9 @@
+.row {
+  justify-content: 'space-around';
+}
+
+@media (max-width: 414px) {
+  .row {
+    justify-content: 'flex-end';
+  }
+}

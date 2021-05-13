@@ -1,6 +1,7 @@
 import { Row, Col } from 'antd';
 import { withTranslation } from 'react-i18next';
 import Slide from 'react-reveal/Slide';
+import { motion } from 'framer-motion';
 
 import SvgIcon from '../../../common/SvgIcon';
 import Button from '../../../common/Button';
@@ -24,6 +25,10 @@ const RightBlock = ({
       behavior: 'smooth',
     });
   };
+  // const { scrollY } = useViewportScroll();
+  // const y = useTransform(scrollY, [0, 1], [0, -0.2], {
+  //   clamp: false,
+  // });
   return (
     <S.RightBlockContainer>
       <Row type='flex' justify='space-between' align='middle' id={id}>
@@ -54,14 +59,16 @@ const RightBlock = ({
           </Slide>
         </Col>
         <Col lg={11} md={11} sm={12} xs={24} style={{ overflow: 'hidden' }}>
-          <Slide right>
-            <SvgIcon
-              src={icon}
-              className='about-block-image'
-              width='100%'
-              height='300vw'
-            />
-          </Slide>
+          <motion.div>
+            <Slide right>
+              <SvgIcon
+                src={icon}
+                className='about-block-image'
+                width='100%'
+                height='300vw'
+              />
+            </Slide>
+          </motion.div>
         </Col>
       </Row>
     </S.RightBlockContainer>

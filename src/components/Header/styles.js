@@ -4,6 +4,7 @@ import { MenuOutlined } from '@ant-design/icons';
 
 export const Header = styled.header`
   padding: 1rem 0.5rem;
+  position: sticky;
 `;
 
 export const LogoContainer = styled(Link)`

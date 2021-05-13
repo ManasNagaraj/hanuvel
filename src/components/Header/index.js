@@ -7,7 +7,9 @@ import { motion } from 'framer-motion';
 import * as S from './styles';
 
 const SvgIcon = lazy(() => import('../../common/SvgIcon'));
-const Button = lazy(() => import('../../common/Button'));
+const Button = lazy(() => import('../../common/ButtonHeader'));
+
+//TODO add responsive element for mobile justify content
 
 const Header = ({ t }) => {
   const [isNavVisible] = useState(false);
@@ -33,10 +35,10 @@ const Header = ({ t }) => {
     return (
       <Fragment>
         <S.CustomNavLinkSmall onClick={() => scrollTo('about')}>
-          <S.Span>{t('About')}</S.Span>
+          <S.Span>{t('Home')}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo('why us')}>
-          <S.Span>{t('Why us')}</S.Span>
+        <S.CustomNavLinkSmall onClick={() => scrollTo('whyus')}>
+          <S.Span>{t('About us')}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => scrollTo('product')}>
           <S.Span>{t('Services')}</S.Span>
@@ -66,7 +68,7 @@ const Header = ({ t }) => {
       {' '}
       <S.Header>
         <S.Container>
-          <Row type='flex' justify='space-around' gutter={20}>
+          <Row type='flex' gutter={20} justify='space-around'>
             {/* <S.LogoContainer to='/' aria-label='homepage'></S.LogoContainer> */}
             <S.NotHidden>
               <MenuItem />

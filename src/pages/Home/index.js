@@ -8,8 +8,9 @@ import ProductContent from '../../content/ProductContent.json';
 import ContactContent from '../../content/ContactContent.json';
 import ComplianceFramework from '../../content/ComplianceFramewok.json';
 import MiddleBlockIntro from '../../components/MiddleBlockIntro';
+
 import Hero from '../../components/Hero';
-const Ourservice = lazy(() => import('../../components/Ourservice'));
+const Ourservice = lazy(() => import('../../components/OurServices'));
 const ContactFrom = lazy(() => import('../../components/ContactForm'));
 const ContentBlock = lazy(() => import('../../components/ContentBlock'));
 const MiddleBlock = lazy(() => import('../../components/MiddleBlock'));
@@ -19,30 +20,20 @@ const ScrollToTop = lazy(() => import('../../common/ScrollToTop'));
 const Home = () => {
   return (
     <>
-      <Hero></Hero>
+      <Hero id='intro'></Hero>
+
       <Container>
         <ScrollToTop />
-        {/* <ContentBlock
-          type='intro'
-          first='true'
-          titleSize='1'
-          contentSize='0.80'
-          title={IntroContent.title}
-          content={IntroContent.text}
-          button={IntroContent.button}
-          display='hidden'
-          // icon='developer.svg'
-          id='intro'
-        /> */}
 
         {/* <MiddleBlockIntro /> */}
         <MiddleBlock
           title={MiddleBlockContent.title}
           content={MiddleBlockContent.text}
           button={MiddleBlockContent.button}
+          id='about'
         />
         <div style={{ height: '10vh' }}></div>
-        <h1 style={{ textAlign: 'center', fontFamily: 'Merriwearther' }}>
+        <h1 id='product' style={{ textAlign: 'center', fontFamily: 'Poppin' }}>
           Our services
         </h1>
 
@@ -121,7 +112,7 @@ const Home = () => {
           title={ComplianceFramework.title}
           content={ComplianceFramework.text}
           icon='compliance.svg'
-          id='product'
+          id='whyus'
         />
 
         <ContactFrom title={ContactContent.title} id='contact' />

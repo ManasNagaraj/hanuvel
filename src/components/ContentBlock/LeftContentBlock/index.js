@@ -21,12 +21,7 @@ const LeftContentBlock = ({
       <Row type='flex' justify='space-between' align='middle' id={id}>
         <Col lg={11} md={11} sm={12} xs={24} style={{ overflow: 'hidden' }}>
           <Slide>
-            <SvgIcon
-              src={icon}
-              className='about-block-image'
-              width='100%'
-              height='300vw'
-            />
+            <SvgIcon src={icon} className='about-block-image' height='300vh' />
           </Slide>
         </Col>
         <Col lg={11} md={11} sm={11} xs={24}>
