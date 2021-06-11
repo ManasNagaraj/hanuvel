@@ -83,15 +83,21 @@ const Footer = ({ t }) => {
                 </S.Large>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
+                <S.Title>{t('For Legal Queries')}</S.Title>
+                <S.Large>Our legal team</S.Large>
+                <S.Large> Kamal & Co. Advocates </S.Large>
+                <S.Para>legal@hanuvel.com</S.Para>
+              </Col>
+              <Col lg={6} md={6} sm={12} xs={24}>
                 <S.NavLink to='/'>
                   <S.LogoContainer></S.LogoContainer>
                 </S.NavLink>
-                <S.FooterContainer>
+                {/* <S.FooterContainer>
                   <SocialLink href='' src='twitter.svg' />
                   <SocialLink href='' src='linkedin.svg' />
                   <SocialLink href='' src='instagram.svg' />
                   <SocialLink href='' src='medium.svg' />
-                </S.FooterContainer>
+                </S.FooterContainer> */}
               </Col>
             </Row>
           </Container>
