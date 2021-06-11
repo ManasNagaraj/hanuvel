@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Backdrop from '../../assets/newBackdrop.mp4';
+import BackdropImage from '../../assets/backdrop.jpg';
 import { motion } from 'framer-motion';
 import './style.scss';
 
@@ -31,6 +32,7 @@ function Hero() {
         autoplay='true'
         loop='true'
         muted='true'
+        poster={BackdropImage}
         style={{
           position: 'absolute',
           width: '100%',
